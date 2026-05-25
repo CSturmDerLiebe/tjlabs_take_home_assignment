@@ -1,0 +1,20 @@
+@theme inline {
+    /* region Size/Line-Height */
+    /* NOTE: Disabled, because defined in app/layout.tsx */
+    /*noinspection CssUnresolvedCustomProperty*/
+    --font-text: var(--font-public-sans), Arial, Helvetica, sans-serif;
+    --font-heading: var(--font-barlow), Arial, Helvetica, sans-serif;
+    --text-h4: 1.5rem;
+    --text-h4--line-height: 2.25rem;
+    --text-button-large: 0.9375rem;
+    --text-button-large--line-height: 1.625rem;
+    --text-input-text: 0.9375rem;
+    --text-input-text--line-height: 1.375rem;
+    --text-subtitle2: 0.875rem;
+    --text-subtitle2--line-height: 1.375rem;
+    --text-body2: 0.875rem;
+    --text-body2--line-height: 1.375rem;
+    --text-input-label: 0.75rem;
+    --text-input-label--line-height: 0.75rem;
+    /*  endregion */
+}
