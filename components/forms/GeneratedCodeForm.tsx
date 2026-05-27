@@ -30,6 +30,7 @@ export default function SlotForm({amount}: SlotFormProps) {
                 size="S"
                 variant="Text"
                 className="size-full text-text-primary flex items-center justify-center gap-3"
+                tabIndex={-1}
                 type="button">
                 <AltArrowLeft size="1rem" color="inherit"/>
                 Zurück
