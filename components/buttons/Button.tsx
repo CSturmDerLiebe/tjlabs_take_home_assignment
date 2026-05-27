@@ -11,8 +11,8 @@ type ButtonLargeProps = RequireSelected<ButtonHTMLAttributes<HTMLButtonElement>,
 /**
  * @throws Error if the size and variant combination is unsupported.
  */
-export function Button({size, variant, children, ...props}: ButtonLargeProps) {
-    return <button {...props} className={selectClassName(size, variant)}> {children} </button>;
+export function Button({size, variant, className, children, ...props}: ButtonLargeProps) {
+    return <button {...props} className={`${selectClassName(size, variant)} ${className}`}> {children} </button>;
 }
 
 /**

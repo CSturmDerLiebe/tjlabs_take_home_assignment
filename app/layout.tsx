@@ -27,7 +27,7 @@ export default function RootLayout({children}: Readonly<{ children: ReactNode }>
             className={`${publicSans.variable} ${barlow.variable} h-full bg-[image:url('/backgrounds/bg.png')] bg-cover bg-no-repeat`}
         >
         <body className="min-h-full flex flex-col items-stretch font-text text-text-primary text-body2 bg-background-default/90">
-        <header className="flex justify-end">
+        <header className="flex justify-end pt-5.5 pr-5">
             <Image
                 src="/icons/flag_uk.svg"
                 alt="Union Jack"
