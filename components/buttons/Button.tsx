@@ -3,7 +3,7 @@ import {RequireSelected} from "@/types/utils/RequireSelected";
 
 type Size = "L" | "S";
 type Variant = "Contained" | "Text";
-type ButtonLargeProps = RequireSelected<ButtonHTMLAttributes<HTMLButtonElement>, "children" | "onClick" | "type"> & {
+type ButtonLargeProps = RequireSelected<ButtonHTMLAttributes<HTMLButtonElement>, "children" | "type"> & {
     size: Size,
     variant: Variant
 }
@@ -22,17 +22,21 @@ function selectClassName(size: Size, variant: Variant) {
     switch (size) {
         case "L":
             switch (variant) {
-                case "Contained":
+                case "Contained": {
+                    // noinspection UnnecessaryLocalVariableJS
                     const className = "bg-primary-main text-button-large font-bold text-primary-contrast-text py-3 rounded-lg"
                     return className
+                }
                 default:
                     throw new Error(`Invalid Button Type: ${size}-${variant}`);
             }
         case "S":
             switch (variant) {
-                case "Text":
+                case "Text": {
+                    // noinspection UnnecessaryLocalVariableJS
                     const className = "text-subtitle2 font-semibold text-primary"
                     return className
+                }
                 default:
                     throw new Error(`Invalid Button Type: ${size}-${variant}`);
             }
