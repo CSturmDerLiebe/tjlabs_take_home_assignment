@@ -34,7 +34,7 @@ export default function RootLayout({children}: Readonly<{ children: ReactNode }>
                 priority
                 width={27.65}
                 height={20}
-                className="aspect-27.65/20"
+                className="aspect-27.65/20 rounded-sm"
             />
         </header>
 
