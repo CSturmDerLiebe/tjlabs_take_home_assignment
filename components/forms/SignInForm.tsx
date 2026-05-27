@@ -25,7 +25,7 @@ export default function SignInForm() {
             minLength={8}
             value={password}
             onChange={(event) => setPassword(event.target.value)}
-            type={isPasswordVisible ? "password" : "text"}
+            type={isPasswordVisible ? "text" : "password"}
         >
             <PasswordVisibleToggle
                 active={isPasswordVisible}
@@ -52,6 +52,6 @@ export default function SignInForm() {
 function PasswordVisibleToggle({active, onClick}: Readonly<{ active: boolean, onClick: () => void }>) {
     const iconProps = {color: "inherit", size: "1.5rem"}
     return <button type="button" className="text-action-active" onClick={onClick}>
-        {active ? <EyeClosed {...iconProps} /> : <Eye {...iconProps} />}
+        {active ? <Eye {...iconProps}/> : <EyeClosed {...iconProps} />}
     </button>
 }
