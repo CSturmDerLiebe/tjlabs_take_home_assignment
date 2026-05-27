@@ -6,7 +6,7 @@ import {Eye, EyeClosed} from "@solar-icons/react-perf/Outline";
 import Link from "next/link";
 import {useRef, useState} from "react";
 
-export function SignInForm() {
+export default function SignInForm() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [isPasswordVisible, setIsPasswordVisible] = useState(false)
