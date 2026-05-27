@@ -1,0 +1,3 @@
+@theme {
+    --shadow-z24: 0 24px 48px hsl(from var(--grey-500) h s l / 16%);
+}
